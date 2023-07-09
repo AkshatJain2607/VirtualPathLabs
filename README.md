@@ -1,2 +1,1 @@
-# VirtualPathLabs
 # virtualpathlabs.netlify.app
