@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Virtual Path Labs</title>
+  <link rel = "icon" href = "Icon.jpg" type = "image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    button:hover {
+  opacity:0.6;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+  </style>
+</Head>
+<body background ="Background Blur.jpg">
+<div class="bg-image"></div>
+<script src="Functions.js"></script>
+<div class="bg-div">
+<img class="logo-img" src="Logo.jpg" alt="Logo" style="width:500px; height:100px;">
+    <nav>
+        <ul>
+          <div id="flex">
+            <li><a href="index.html" id="X"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="About.html" id="Y"><i class="fa fa-fw fa-file"></i>About</a></li>
+            <div class="dropdown">
+              <button class="dropbtn" id="Z"><i class="fa fa-plus-square"></i>Tests</button>
+              <div class="dropdown-content">
+                <a href="Kidney.html">Test For Kidney Stones</a>
+                <a href="Cancer.html">Test For Breast Cancer</a>
+              </div>
+            </div>
+            <li><a href="Contact.html" id="M"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            <li><a class="active" href="Login.html" id="N"><i class="fa fa-fw fa-sign-in"></i>Login</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+</div>
+<form class="modal-content animate" action="/action_page.php" method="post">
+   <center><h1>Login|<a href="Signup.html" style="text-decoration: none; color: rgb(250, 8, 8);">SignUp</a></h1></center>
+   <hr>
+     <div class="imgcontainer">
+    <img src="Avatar Image.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+      
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+ <center><h1 style="font-size:13px">!!Don't Have An Account!!<br><a href ="Signup.html">Register Here</a></h1></center>
+</div>
+</form>
+<center>
+  <footer>
+    <h1>@Copyright <a href="index.html"> Virtual Path Labs </a> 2022- All Right Reserved. </h1>
+  </footer>
+  </center>
+</body>
+</Html>

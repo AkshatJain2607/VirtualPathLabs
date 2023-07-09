@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Virtual Path Labs</title>
+  <link rel = "icon" href = "Icon.jpg" type = "image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    button:hover {
+  opacity:0.6;
+}
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #474e5d;
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 30%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+         width: 100%;
+      }
+    }
+    html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+    
+    </style>
+</Head>
+<body background ="Background Blur.jpg">
+<div class="bg-image"></div>
+<script src="Functions.js"></script>
+<div class="bg-div">
+<img class="logo-img" src="Logo.jpg" alt="Logo" style="width:500px; height:100px;">
+    <nav>
+        <ul>
+          <div id="flex">
+            <li><a href="index.html" id="X"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="About.html" id="Y"><i class="fa fa-fw fa-file"></i>About</a></li>
+            <div class="dropdown">
+              <button class="dropbtn" id="Z"><i class="fa fa-plus-square"></i>Tests</button>
+              <div class="dropdown-content">
+                <a href="Kidney.html">Test For Kidney Stones</a>
+                <a href="Cancer.html">Test For Breast Cancer</a>
+              </div>
+            </div>
+            <li><a href="Contact.html" id="M"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            <li><a class="active" href="Login.html" id="N"><i class="fa fa-fw fa-sign-in"></i>Login</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+</div>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <center><h1><a href="Login.html" style="text-decoration: none; color: rgb(242, 15, 15);">Login</a>|SignUp</h1></center>
+        <center><p>Please fill in this form to create an account.</p></center>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <center><p>By creating an account you agree to our <a href="#" style="color:dodgerblue"><a href="Privacy.html">Terms & Privacy.</a></p></center>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="Login.html">Cancel</a></button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+  <div class="container" style="background-color:#f1f1f1">
+ <center><h1 style="font-size:13px">!!Already Have An Account!!<br><a href="Login.html">Login Here</a></h1></center>
+</div>
+</form>
+<center>
+  <footer>
+    <h1>@Copyright <a href="index.html"> Virtual Path Labs </a> 2022- All Right Reserved. </h1>
+  </footer>
+  </center>
+</body>
+</Html>
